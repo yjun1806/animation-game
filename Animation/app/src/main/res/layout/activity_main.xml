@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/con"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2f2f2f"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/m_line"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="32dp"
+        android:layout_marginEnd="48dp"
+        android:layout_marginLeft="48dp"
+        android:layout_marginRight="48dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="32dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/m_game1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="64dp"
+            android:layout_weight="1"
+            app:cardBackgroundColor="#ec7c91"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="10dp"
+            tools:layout_editor_absoluteX="52dp"
+            tools:layout_editor_absoluteY="57dp">
+
+            <Button
+                android:id="@+id/oneto25"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:background="@android:color/transparent"
+                android:gravity="center"
+                android:padding="8dp"
+                android:text="1. 1 to 25 게임"
+                android:textColor="@android:color/white"
+                android:textSize="32sp"
+                android:textStyle="bold" />
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/m_game2"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="64dp"
+            android:layout_weight="1"
+            app:cardBackgroundColor="#de596f"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="10dp"
+            tools:layout_editor_absoluteX="52dp"
+            tools:layout_editor_absoluteY="214dp">
+
+            <Button
+                android:id="@+id/oneto50"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:background="@android:color/transparent"
+                android:gravity="center"
+                android:padding="8dp"
+                android:text="2. 1 to 50 게임"
+                android:textColor="@android:color/white"
+                android:textSize="32sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/oneto25"
+                app:layout_constraintTop_toBottomOf="@+id/oneto25" />
+        </android.support.v7.widget.CardView>
+
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/m_game3"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="64dp"
+            android:layout_weight="1"
+            app:cardBackgroundColor="#cc465c"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="10dp"
+            tools:layout_editor_absoluteX="52dp"
+            tools:layout_editor_absoluteY="371dp">
+
+            <Button
+                android:id="@+id/game2_bt"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:background="@android:color/transparent"
+                android:gravity="center"
+                android:padding="8dp"
+                android:text="3. 음식먹기 게임"
+                android:textColor="@android:color/white"
+                android:textSize="32sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/oneto50"
+                app:layout_constraintTop_toBottomOf="@+id/oneto50" />
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/m_game4"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="64dp"
+            android:layout_weight="1"
+            app:cardBackgroundColor="#9d273b"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="10dp"
+            tools:layout_editor_absoluteX="52dp"
+            tools:layout_editor_absoluteY="528dp">
+
+            <Button
+                android:id="@+id/game3_bt"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:background="@android:color/transparent"
+                android:gravity="center"
+                android:padding="8dp"
+                android:text="4. 노바런"
+                android:textColor="@android:color/white"
+                android:textSize="32sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/oneto50"
+                app:layout_constraintTop_toBottomOf="@+id/m_game2" />
+        </android.support.v7.widget.CardView>
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="17dp"
+        android:background="#6d101f"
+        android:onClick="onClick_record_viewing"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:text="게임 순위 보기"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</android.support.constraint.ConstraintLayout>
