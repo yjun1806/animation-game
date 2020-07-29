@@ -7,13 +7,18 @@
 - 3종류의 게임
 - Firebase의 RealTimeDatabase에 기록을 저장하여 다른 사람과 기록비교가 가능
 
+
 ## 사용기술
 
 - Firebase
 
+
 ## 영상
 
-[ 추후 추가 예정 ]
+[![영상](http://img.youtube.com/vi/xMtQLsCjAw8/0.jpg)](https://youtu.be/xMtQLsCjAw8 "영상")
+
+위의 이미지를 클릭하시면 영상을 보실 수 있습니다.
+
 
 ## 스크린샷 및 상세 설명
 
